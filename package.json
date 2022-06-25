@@ -1,0 +1,21 @@
+{
+  "name": "pn-widget-helloworld",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/twilson63/pn-widget-helloworld.git",
+  "author": "Tom Wilson <tom@hyper.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "rollup": "^2.75.7",
+    "rollup-plugin-svelte": "^7.1.0",
+    "svelte": "^3.48.0",
+    "w3": "^2.0.2"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "deploy": "arkb deploy dist --use-bundler https://node2.bundlr.network --wallet mywallet.json",
+    "test": "echo test",
+    "example": "w3 example"
+  }
+}
